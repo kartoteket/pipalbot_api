@@ -168,6 +168,7 @@ return [
          * Package Service Providers...
          */
         Bosnadev\Database\DatabaseServiceProvider::class, // extensions for postgres spacial data
+        Phaza\LaravelPostgis\DatabaseServiceProvider::class, //postgis data
 
         /*
          * Application Service Providers...
