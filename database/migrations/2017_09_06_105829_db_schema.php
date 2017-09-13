@@ -13,7 +13,7 @@ class DbSchema extends Migration
      */
     public function up()
     {
-        Schema::create('pb_dev_schema', function (Blueprint $table) {
+        Schema::create('schema', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('table_id');
             $table->string('name', 255);
@@ -35,6 +35,6 @@ class DbSchema extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pb_dev_schema');
+        Schema::dropIfExists('schema');
     }
 }
