@@ -179,6 +179,10 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
+        /*
+         * Its here but I dunno why really
+         */
+        App\Providers\GeoFakerServiceProvider::class,
     ],
 
     /*
