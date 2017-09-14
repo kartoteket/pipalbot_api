@@ -21,7 +21,7 @@ class CreateStoredLocationsTable extends Migration
             $table->bigInteger('osm_id');                   // the osm_id, dunno if it makes sense, but here we go
             $table->string('name', 255);                    // Tha name of the osm entity
             $table->string('datatype', 16);                 // datatype (can be POINT, MULTIPOINT, PATH, MULTIPATH, POLYGON, MULTIPOLYGON)
-            $table->polygon('constraints');                 // box (describing the constraints of the geometry)
+            $table->polygon('constraints');->nullable();    // box (describing the constraints of the geometry)
             $table->string('country', 255)->nullable();     // name ofg the country
             $table->string('iso_3', 3)->nullable();         // iso3 code for the country
             $table->json('address')->nullable();            // address, as osm describes it
